@@ -21,3 +21,5 @@ while liczba != liczbaDoZgadniecia:
         
 else: 
     print("Komputer zgadl liczbe ", liczba, "w", i, "probach.")
+ 
+input("\n\nPress Enter to end..")
