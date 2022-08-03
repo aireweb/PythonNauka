@@ -1,7 +1,8 @@
 import random
-
-liczbaDoZgadniecia = int(input("Podaj liczbe ktora ma zgadnac komputer (od 0 do 100): "))
-i=0
+liczbaDoZgadniecia = 0
+while liczbaDoZgadniecia < 1 or liczbaDoZgadniecia > 100:
+    liczbaDoZgadniecia = int(input("Podaj liczbe ktora ma zgadnac komputer (od 0 do 100): "))
+i=1
 
 wieksza = 100
 mniejsza = 1
@@ -20,6 +21,7 @@ while liczba != liczbaDoZgadniecia:
         print("Komputer wybrał liczbe:", liczba)
         
 else: 
+    i += 1
     print("Komputer zgadl liczbe ", liczba, "w", i, "probach.")
  
 input("\n\nPress Enter to end..")
