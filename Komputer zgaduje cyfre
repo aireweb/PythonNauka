@@ -1,0 +1,23 @@
+import random
+
+liczbaDoZgadniecia = int(input("Podaj liczbe ktora ma zgadnac komputer (od 0 do 100): "))
+i=0
+
+wieksza = 100
+mniejsza = 1
+liczba = random.randint(mniejsza, wieksza)
+
+while liczba != liczbaDoZgadniecia:
+    i += 1
+    if liczba < liczbaDoZgadniecia:
+        mniejsza = liczba+1
+        liczba = random.randint(mniejsza, wieksza)
+        print("Komputer wybrał liczbe:", liczba)
+    
+    if liczba > liczbaDoZgadniecia:
+        wieksza = liczba-1
+        liczba = random.randint(mniejsza, wieksza)
+        print("Komputer wybrał liczbe:", liczba)
+        
+else: 
+    print("Komputer zgadl liczbe ", liczba, "w", i, "probach.")
