@@ -1,0 +1,23 @@
+from abc import ABC, abstractmethod
+
+class jednoslad(ABC):
+    
+    def __init__(self, pojemnosc, kolor, marka, przebieg):
+        self.pojmnosc = pojemnosc
+        self.kolor = kolor
+        self.marka = marka
+#       self.skrzynia = skrzynia
+        self.przebieg = przebieg
+        
+    def uruchom(self):
+        print(self.marka, "zostal uruchomiony")
+    
+    def podaj_przebieg(self):
+        print("Przebieg wynosi: ", self.przebieg)
+        
+motor1 = jednoslad(999, "czerwony", "Kawasaki", 156522)
+
+motor1.uruchom()
+    
+    
+    http://analityk.edu.pl/programowanie-obiektowe-w-python-dziedziczenie/
