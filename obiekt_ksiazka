@@ -1,0 +1,35 @@
+class ksiazka:
+    
+    tytul = ""
+    ilosc_stron = None
+    autor = ""
+    data_wydania = ""
+    wlasciciel = ""
+    
+    def __init__(self, tytul, ilosc_stron, autor, data_wydania, wlasciciel):
+        self.tytul = tytul
+        self.ilosc_stron = ilosc_stron
+        self.autor = autor
+        self.data_wydania = data_wydania
+        self.wlasciciel = wlasciciel
+    
+    def informacje(self):
+        print("Ksiazka o tytule \"", self.tytul, "\" posiada ", self.ilosc_stron, " stron." )
+        print("Autorem jest ", self.autor , " a wydano ją ", self.data_wydania)
+        print("Wlascicielem ksiazki jest ", self.wlasciciel)
+        
+    def zmiana_wlasciciela(self):
+        nowy_wlasciciel = input("Podaj nowego włsciciela: ")
+        self.wlasciciel = nowy_wlasciciel
+        
+elementarz = ksiazka("Elementarz", 56, "Ala Marysia", "25 stycznia 1988", "Ola" )
+
+elementarz.tytul = "Biblia"
+#elementarz.ilosc_stron = 56
+#elementarz.autor = "Ala Marysia"
+#elementarz.data_wydania = "25 stycznia 1988"
+#elementarz.wlasciciel = "Ola"
+
+elementarz.informacje()
+elementarz.zmiana_wlasciciela()
+elementarz.informacje()
