@@ -1,0 +1,2 @@
+f'{self.name} is {self.age} years old'
+print("My name is {}".format(self.name))
