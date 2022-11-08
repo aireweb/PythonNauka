@@ -1,0 +1,35 @@
+class Dog:
+    rasa = "Pies"
+    
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def __str__(self):
+        return f'{self.name} is {self.age} years old'
+        
+    def bark(self, sound):
+        return f'{self.name} is barking loud! {sound}'
+        
+class Spaniel(Dog):
+    def bark(self, sound"spanielowe szczekanie"):
+         return super().bark(sound)
+
+class OwczarekNiemiecki(Dog):
+    pass
+    
+budzik = Spaniel('Budzik', 8)
+emi = OwczarekNiemiecki('Emi', 12)
+
+'''print(budzik.name, budzik.age)
+budzik.age = 9
+
+print(budzik.name, budzik.age
+
+print(budzik)
+print(budzik.bark('Hauhau'))'''
+
+print(budzik)
+print(isinstance(budzik, Spaniel))
+
+print(budzik.bark())
